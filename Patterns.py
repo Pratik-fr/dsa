@@ -1,4 +1,4 @@
-n=6
+n=7
 for i in range(6):
     print(" "*(n-i),(2*i+1)*"*")
 for i in range(6):
@@ -59,3 +59,44 @@ for i in range(1,n):
     for j in range(i-1,0,-1):
         print(chr(t+j-1),end="")
     print()
+for i in range(n-1,-1,-1):
+    for j in range(i,n):
+        print(chr(t+j),end="")
+    print()
+for i in range(n,1,-1):
+    for j in range(1,i):
+        print("*",end="")
+    for j in range(i,n):
+        print(" "*2,end="")
+    for j in range(1,i):
+        print("*",end="")
+    print()
+for i in range(2,n+1):
+    for j in range(1,i):
+        print("*",end="")
+    for j in range(i,n):
+        print(" "*2,end="")
+    for j in range(1,i):
+        print("*",end="")
+    print()
+for i in range(2,n+1):
+    for j in range(1,i):
+        print("*",end="")
+    for j in range(i,n):
+        print(" "*2,end="")
+    for j in range(1,i):
+        print("*",end="")
+    print()
+for i in range(n-1,1,-1):
+    for j in range(1,i):
+        print("*",end="")
+    for j in range(i,n):
+        print(" "*2,end="")
+    for j in range(1,i):
+        print("*",end="")
+    print()
+for i in range(1,n+1):
+    if i==1 or i==n:
+        print("4"*n)
+    else:
+        print("4"," "*(n-2),"4",sep="")
