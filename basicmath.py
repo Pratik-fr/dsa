@@ -1,6 +1,6 @@
 #number od digits
 n=input("enter digit")
-# n=str(n)
+n=str(n)
 print(len(n))
 
 #reverse number
@@ -24,5 +24,4 @@ print(rev)
 if num==rev:
     print("palindrome")
 else: print("Not a palindrome")
-
 
