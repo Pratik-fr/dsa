@@ -45,8 +45,33 @@ def sumofn(n,counter,sum):
     else:
         sum+=counter
         return sumofn(n,counter+1,sum)
-    
-
 m=sumofn(n,counter,sum)
 print(m)
 
+#factorial
+n=6
+def factorial(n):
+    if n==0:
+        return 1
+    else:
+        return n*factorial(n-1)
+
+print(factorial(n))
+
+#reverse an array
+array=[1,4,5,3,2,3]
+n=len(array)
+for i in range(n//2):
+    array[i],array[n-i-1]=array[n-i-1],array[i]
+print(array)
+    
+#palindrome
+p=""
+s="NAAN"
+n=len(s)
+for i in range(n-1,-1,-1):
+    p+=(s[i])
+if p==s:
+    print("palindrome")
+else:
+    print("No")
